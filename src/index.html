@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../dist/css/app.css">
+    <link rel="stylesheet" href="./../dist/css/customApp.css">
+    <title>News API</title>
+</head>
+
+<body>
+    <header>
+      <div id="windows"  class="flex bg-zinc-800 justify-center items-center text-white h-32 gap-12 w-per-100">
+        <div class=" mt-10">
+            <button class=" bg-sky-700 w-40 rounded-md h-8 " id="search"> جست و جو</button>
+        </div>
+        <div>
+            <label class="block m-2 text-right" for="category">تو کدوم دسته ؟</label>
+            <input class="rounded-md p-1 text-black outline-none w-60" type="text" id="category" dir="rtl" placeholder="category">
+            <!-- <select class=" w-48 rounded-md text-black p-1 outline-none" name="" id="category">
+                <option value=""></option>
+                <option value="business">business</option>
+            </select> -->
+        </div>
+        <div>
+            <label class="block m-2 text-right" for="country">تو چه کشوری؟</label>
+            <input class="rounded-md p-1 text-black outline-none w-60" type="text" id="country" dir="rtl" placeholder="اسم کشور">
+            <!-- <select class=" w-48 rounded-md text-black p-1 outline-none" name="" id="country">
+                <option value=""></option>
+                <option value="All">All</option>
+            </select> -->
+        </div>
+        <div>
+            <label class="block m-2 text-right"  for="title">راجب چی میخوای بدونی؟</label>
+            <input class="rounded-md p-1 text-black outline-none w-60" type="text" id="title" dir="rtl" placeholder="موضوع">
+        </div>
+      </div>
+      <div id="mobileTablet" class="w-per-100 h-24 bg-zinc-800">
+        <div id="iconeHamberger" class="flex justify-end pr-4 pt-2">
+            <div id="menuBarMain" class="menuBarMain pointer">
+                <div id="menuBarTopBorder" class=""></div>
+                <div></div>
+                <div id="menuBarbottomBorder" class=""></div>
+            </div>
+        </div>
+        <div id="menuList" class="bg-zinc-800 hidden w-per-100 h-96">
+            <div class="flex flex-col justify-center items-end m-3 text-white">
+                <label class="block m-2 text-right"  for="title">راجب چی میخوای بدونی؟</label>
+                <input class="rounded-md p-1 text-black outline-none w-60" type="text" id="title" dir="rtl" placeholder="موضوع">
+            </div>
+            <div class="flex flex-col justify-center items-end m-3 text-white">
+                <label class="block m-2 text-right" for="country">تو چه کشوری؟</label>
+                <input class="rounded-md p-1 text-black outline-none w-60" type="text" id="country" dir="rtl" placeholder="اسم کشور">
+                <!-- <select class=" w-48 rounded-md text-black p-1 outline-none" name="" id="country">
+                    <option value=""></option>
+                    <option value="All">All</option>
+                </select> -->
+            </div>
+            <div class="flex flex-col justify-center items-end m-3 text-white">
+                <label class="block m-2 text-right" for="category">تو کدوم دسته ؟</label>
+                <input class="rounded-md p-1 text-black outline-none w-60" type="text" id="category" dir="rtl" placeholder="category">
+                <!-- <select class=" w-48 rounded-md text-black p-1 outline-none" name="" id="category">
+                    <option value=""></option>
+                    <option value="business">business</option>
+                </select> -->
+            </div>
+            <div class="flex justify-center mt-16 ml-10">
+                <button class=" bg-sky-700 w-40 rounded-md h-8 text-white" id="search"> جست و جو</button>
+            </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <div class="flex flex-col justify-center" id="main">
+            <!-- <div class="Cards flex mx-auto p-1 justify-center gap-10">
+                 Card
+                 <div class="card w-80 h-auto bg-slate-200 rounded-md">
+                    <div class="">
+                        <img id="imageCard" class="w-80 h-60 mx-auto rounded-t-lg" src="https://s.yimg.com/uu/api/res/1.2/LP9SOSdfsyCR3RtK68TIlA--~B/Zmk9ZmlsbDtoPTYzMDtweW9mZj0wO3c9MTIwMDthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2023-05/72285a10-f5bb-11ed-a7bf-e3812d52c08d.cf.jpg" alt="image">
+                    </div>
+                    <div class="text-center p-1" id="paragraph">
+                        <p class="overflow-y-scroll h-40 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ducimus vero nobis repellendus nisi maxime placeat aspernatur, quas eveniet obcaecati doloremque illum nemo aperiam optio, magni accusantium commodi quaerat voluptates.</p>
+                    </div>
+
+                    <hr class="h-1 mt-5 bg-slate-800 me-1 ms-1 rounded-full">
+
+                    <div class="text-center mt-10 mb-5 bg-blue-600 w-40 mx-auto p-1 rounded-full text-white" id="date">
+                        2022-5-12
+                    </div>
+                </div> 
+
+                
+            </div> -->
+            
+        </div>
+        <div id="loading" class="main hidden">
+            <div class="f1"></div>
+            <div class="f2"></div>
+            <div class="f3"></div>
+        </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

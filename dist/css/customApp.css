@@ -1,0 +1,121 @@
+*,html,body{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 20rem;
+    left: 50%;
+    
+}
+.f1{
+    width: 36px;
+    height: 36px;
+    border: 2px solid rgb(0, 0, 0);
+    position: absolute;
+    border-radius: 100%;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    animation: F1 1s linear infinite;
+}
+@keyframes F1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.f2{
+    width: 26px;
+    height: 26px;
+    border: 2px solid rgb(0, 0, 0);
+    position: absolute;
+    border-radius: 100%;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    top: 5px;
+    left: 5px;
+    animation: F2 1s linear infinite;
+}
+@keyframes F2{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.f3{
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    animation: F3 3s linear infinite;
+}
+
+@keyframes F3{
+    0%{
+        background-color: rgb(247, 163, 163);
+    }
+    20%{
+        background-color: rgb(251, 63, 63);
+    }
+    60%{
+        background-color: rgb(255, 0, 0);
+    }
+    80%{
+        background-color: rgb(251, 63, 63);
+    }
+    100%{
+        background-color: rgb(247, 163, 163);
+    }
+}
+.w-per-100{
+    width: 100%;
+}
+
+.menuBarMain{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menuBarMain div{
+    width: 100%;
+    height: 3px;
+    margin: 3px;
+    background-color: black;
+}
+
+.bottomOpen{
+    animation: openbottom .1s linear;
+    animation-fill-mode: forwards;
+}
+.topOpen{
+    animation: openTop .1s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes openbottom{
+    100%{
+        transform: rotate(65deg)
+    }
+}
+@keyframes openTop{
+    100%{
+        transform: rotate(-65deg)
+    }
+}
+.pointer{
+    cursor: pointer;
+}
